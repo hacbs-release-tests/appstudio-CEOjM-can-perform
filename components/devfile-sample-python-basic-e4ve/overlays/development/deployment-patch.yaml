@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-e4ve
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-tenant/appstudio/devfile-sample-python-basic-e4ve@sha256:c9eb9765945a48675beb6f90b9dbce727e366ffdca54b4ebc578f373ec0247b0
+        name: container-image
+        resources: {}
+status: {}
